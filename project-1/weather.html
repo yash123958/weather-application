@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <main class="main-container">
+    <header class="input-container">
+      <input class="search" type="text" placeholder="Search city...">
+      <button class="btn">
+        <img src="image/image.png" alt="search">
+      </button>
+    </header> 
+
+    <section class="container" style="display: none;">
+      <div class="loc-container">
+        <div class="locn">
+          <img src="image/loc.png" alt="location"> 
+          <h4 class="city">Delhi</h4>
+        </div>
+        <h5 class="datetime regular-txt">Mon,8 Dec</h5>
+      </div>
+
+      <div class="summary">
+        <img src="image/cloudy.png" class="weather-icon">
+        <div class="temp-container">
+          <h1 class="temp">25°C</h1>
+          <h3 class="weather-type regular-txt">Cloudy</h3>
+        </div>
+      </div>
+
+      <div class="main-condition">
+        <div class="condition">
+          <img src="image/drop.png" class="condition-icon">
+          <div class="conditon-item">
+            <h4 class="regular-txt">Humidity</h4>
+            <h4 class="conditon-value">78%</h4>
+          </div>
+        </div>
+
+        <div class="condition">
+          <img src="image/wind.png" class="condition-icon">
+          <div class="conditon-item">
+            <h4 class="regular-txt">Wind Speed</h4>
+            <h4 class="conditon-value">2 m/s</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="forcast-item">
+        <div class="forcast">
+          <h5 class="today-forcast">8 Dec</h5>
+          <img src="image/storm.png" class="forcast-icon">
+          <h5 class="temp">25°C</h5>
+        </div>
+
+        <div class="forcast">
+          <h5 class="today-forcast">8 Dec</h5>
+          <img src="image/storm.png" class="forcast-icon">
+          <h5 class="temp">25°C</h5>
+        </div>
+
+        <div class="forcast">
+          <h5 class="today-forcast">8 Dec</h5>
+          <img src="image/storm.png" class="forcast-icon">
+          <h5 class="temp">25°C</h5>
+        </div>
+
+        <div class="forcast">
+          <h5 class="today-forcast">8 Dec</h5>
+          <img src="image/storm.png" class="forcast-icon">
+          <h5 class="temp">25°C</h5>
+        </div>
+      </div>
+    </section> 
+
+    <section class="weather-show">
+      <img src="image/search-city.png" class="search-city">
+      <h4 class="search-txt">Search for a city to get weather updates</h4>
+    </section>
+  </main>
+
+  <script src="work.js"></script>
+</body>
+</html>

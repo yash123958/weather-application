@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", sans-serif;
+}
+
+/* ===================== BODY ===================== */
+body{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+        linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+        url("image/bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* ===================== MAIN CARD ===================== */
+.main-container{
+    width:300px;
+    height:420px;
+    padding:18px;
+    border-radius:22px;
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+    box-shadow:0 8px 32px rgba(0,0,0,0.35);
+    color:white;
+    overflow:hidden;
+}
+
+/* ===================== SEARCH BAR ===================== */
+.input-container{
+    position:relative;
+    margin-bottom:16px;
+}
+
+.search{
+    width:100%;
+    height:42px;
+    border-radius:50px;
+    padding:10px 52px 10px 18px;
+    border:none;
+    outline:none;
+    font-size:14px;
+    background:rgba(255,255,255,0.28);
+    color:white;
+}
+
+.search::placeholder{
+    color:rgba(255,255,255,0.85);
+}
+
+.btn{
+    position:absolute;
+    right:6px;
+    top:50%;
+    transform:translateY(-50%);
+    width:36px;
+    height:36px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,0.35);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:rgba(255,255,255,0.6);
+}
+
+.btn img{
+    width:18px;
+}
+
+/* ===================== WEATHER CONTAINER ===================== */
+.container{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+/* ===================== LOCATION ===================== */
+.loc-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.locn{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.locn img{
+    width:18px;
+}
+
+.city{
+    font-size:15px;
+    font-weight:600;
+}
+
+.datetime{
+    font-size:12px;
+    opacity:0.85;
+}
+
+/* ===================== SUMMARY ===================== */
+.summary{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
+
+.weather-icon{
+    width:80px;
+    filter:drop-shadow(0 6px 10px rgba(0,0,0,0.35));
+}
+
+.temp-container{
+    text-align:right;
+    max-width:130px;
+}
+
+.temp{
+    font-size:32px;
+    font-weight:700;
+    line-height:1;
+}
+
+.weather-type{
+    font-size:13px;
+    opacity:0.9;
+}
+
+/* ===================== CONDITIONS ===================== */
+.main-condition{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+}
+
+.condition{
+    width:48%;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:8px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.2);
+}
+
+.condition-icon{
+    width:22px;
+}
+
+.conditon-item h4{
+    font-size:12px;
+    font-weight:500;
+}
+
+.conditon-value{
+    font-weight:700;
+}
+
+/* ===================== FORECAST ===================== */
+.forcast-item{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    padding-bottom:6px;
+}
+
+.forcast-item::-webkit-scrollbar{
+    display:none;
+}
+
+.forcast{
+    min-width:70px;
+    padding:8px;
+    border-radius:14px;
+    background:rgba(255,255,255,0.2);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    transition:0.3s;
+}
+
+.forcast:hover{
+    transform:translateY(-4px);
+    background:rgba(255,255,255,0.35);
+}
+
+.forcast-icon{
+    width:36px;
+}
+
+.today-forcast{
+    font-size:11px;
+}
+
+/* ===================== DEFAULT SCREEN ===================== */
+.weather-show{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:40px;
+    text-align:center;
+}
+
+.search-city{
+    width:170px;
+    margin-bottom:12px;
+}
+
+.search-txt{
+    font-size:14px;
+    opacity:0.9;
+}
+
+/* ===================== TEXT ===================== */
+.regular-txt{
+    font-weight:400;
+}
+
+
